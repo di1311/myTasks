@@ -8,7 +8,7 @@ class ParseWiki:
     html = requests.get(URL).text
     animals_dict = defaultdict(int)
 
-    def get_content(self):
+    def get_content(self) -> dict:
         print('Wait parse...')
         while True:
             soup = BeautifulSoup(self.html, 'html.parser')

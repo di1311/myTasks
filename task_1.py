@@ -1,8 +1,8 @@
-def task(array):
+def task(array: str) -> int:
     return list(array).index('0')
 
 
-def task1(array):
+def task1(array: str) -> int:
     return list(map(int, list(array))).index(0)
 
 
